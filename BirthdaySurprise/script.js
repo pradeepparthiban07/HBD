@@ -144,7 +144,7 @@ document.querySelectorAll(".quiz-btn").forEach(button => {
 function updateCountdown() {
     const caption = document.getElementById("countdownCaption");
 
-    const birthdayDate = "2004-05-15T10:30:00";
+    const birthdayDate = "2008-11-06T00:00:00";
     const birthDate = new Date(birthdayDate);
 
     if (Number.isNaN(birthDate.getTime())) {
