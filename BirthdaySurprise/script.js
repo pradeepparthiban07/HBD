@@ -316,3 +316,13 @@ function createBalloon() {
 }
 createBalloon()
 setInterval(createBalloon, 1800);
+
+ function playMusic() {
+        document.getElementById("bgMusic").play();
+    }
+
+   function stopMusic() {
+    const music = document.getElementById("bgMusic");
+    music.pause();
+    music.currentTime = 0;
+}
