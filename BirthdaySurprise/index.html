@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Operation: Make Her Smile!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor decor-one">🌸</div>
+  <div class="decor decor-two">✨</div>
+  <div class="decor decor-three">🎈</div>
+
+  
+
+  <div id="site" class="">
+    <header class="hero">
+      <div class="hero-content">
+        <span class="pill">🚨 SPECIAL BIRTHDAY ALERT 🚨</span>
+        <div class="hero-emoji">🥳</div>
+        <h1>Happy Birthday,<br><span class="script" id="heroName">Birthday Girl!</span><span style="font-size:50px;">🎀</span></h1>
+        <!-- <p>Congratulations! You've completed another trip around the sun.<br>Your reward? Cake, laughs and absolutely no homework today.</p> -->
+        <button class="btn primary" id="startBtn">Wishes summary 🎁</button>
+      </div>
+    </header>
+
+    <!-- <section class="section" id="cakeSection">
+      <h2 class="section-title">Cake loading... 🎂</h2>
+      <p class="subtitle">Warning: contains 100% happiness and zero calories (hopefully).</p>
+      <div class="card">
+        <button class="cake-button" id="cakeButton" aria-label="Blow out the birthday candles">🎂</button>
+        <p class="message" id="cakeMessage" aria-live="polite">Make a wish, then blow out the candles!</p>
+        <button class="btn primary" id="blowBtn">Blow the candles! 🕯️</button>
+      </div>
+    </section> -->
+
+    <button class="btn primary hidden" id="noBtn">Blow the candles! 🕯️</button>
+    <button class="btn primary hidden" id="giftButton">Blow the candles! 🕯️</button>
+    <button class="btn primary hidden" id="prevSlide">Blow the candles! 🕯️</button>
+    <button class="btn primary hidden" id="nextSlide">Blow the candles! 🕯️</button>
+    <button class="btn primary hidden" id="certificateBtn">Blow the candles! 🕯️</button>
+
+
+
+
+    
+
+    <!-- <section class="section">
+      <h2 class="section-title">A very important quiz 🤓</h2>
+      <p class="subtitle">This examination will determine your cake-eating privileges.</p>
+      <div class="card">
+        <h3 class="quiz-question">What is the most important birthday activity?</h3>
+        <div class="quiz-options">
+          <button class="quiz-btn" data-answer="study">A. Study seriously 📚</button>
+          <button class="quiz-btn" data-answer="work">B. Do office work 💻</button>
+          <button class="quiz-btn" data-answer="cake">C. Eat cake and enjoy 🍰</button>
+          <button class="quiz-btn" data-answer="sleep">D. Sleep all day 😴</button>
+        </div>
+        <p class="quiz-result" id="quizResult" aria-live="polite">Choose wisely. This is a very serious examination.</p>
+      </div>
+    </section> -->
+
+    <section class="section" id="wishes">
+      <h2 class="section-title">A little birthday note 💌</h2>
+      <p class="subtitle">No boring speeches. Just a few good wishes!</p>
+      <article class="card note">
+        <p><strong>Hey <span class="name-slot">Birthday Girl</span>! 😊</strong></p>
+       <p>Wishing you a very Happy Birthday! 🎂❤️</p>
+<p>May your special day be filled with endless laughter, beautiful moments, delicious food, lovely surprises and all the happiness you deserve.</p>
+<p>May this new year bring you closer to your dreams, make your worries smaller, your achievements bigger, and fill your life with countless reasons to smile.</p>
+<p>Keep shining, keep smiling and keep being the wonderful person you are!</p>
+<p>Have an absolutely amazing birthday and an even more amazing year ahead! 🎉💕</p>
+      </article>
+    </section>
+
+    <!-- Countdown: set birthday date in script.js -->
+    <!-- <section class="section">
+      <h2 class="section-title">Birthday countdown ⏳</h2>
+      <p class="subtitle" id="countdownCaption">The birthday clock is ticking!</p>
+      <div class="countdown card" id="countdown">
+        <div><strong id="days">--</strong><span>Days</span></div>
+        <div><strong id="hours">--</strong><span>Hours</span></div>
+        <div><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </section> -->
+
+    <!-- Scratch card -->
+    <section class="section">
+      <h2 class="section-title">Scratch for a small surprise 🤗</h2>
+      <p class="subtitle">Use your finger or mouse to reveal the secret message.</p>
+      <div class="scratch-wrap card">
+        <div class="scratch-message">
+          <span class="scratch-emoji">🎉</span>
+          <strong>Surprise!</strong>
+          <span>
+      <h2 class="section-title">Birthday countdown ⏳</h2>
+      <p class="subtitle" id="countdownCaption">The birthday clock is ticking!</p>
+      <div class="countdown card" id="countdown">
+        <div><strong id="days">--</strong><span>Days</span></div>
+        <div><strong id="hours">--</strong><span>Hours</span></div>
+        <div><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </span>
+        </div>
+        <canvas id="scratchCanvas" aria-label="Scratch this card to reveal your birthday surprise"></canvas>
+      </div>
+      <button class="btn secondary" id="resetScratch">Reset scratch card</button>
+    </section>
+
+    <!-- Gift box
+    <section class="section">
+      <h2 class="section-title">A mystery gift 🎁</h2>
+      <p class="subtitle">No guessing. Just tap the gift and see what's inside.</p>
+      <button class="gift-button" id="giftButton" aria-label="Open the mystery gift">
+        <span class="gift-lid"></span><span class="gift-box">🎁</span>
+      </button>
+      <p class="message" id="giftMessage" aria-live="polite">Psst... this gift contains a whole lot of birthday cheer.</p>
+    </section> -->
+
+    <!-- Photo slideshow -->
+    <!-- <section class="section">
+      <h2 class="section-title">Smile gallery 📸</h2>
+      <p class="subtitle">A little slideshow of happy moments.</p>
+      <div class="slideshow card">
+        <img id="slideImage" src="images/photo1.jpg" alt="Birthday memory">
+        <div id="slideFallback" class="slide-fallback">📷<br><span>Add your photos to the images folder</span></div>
+        <p id="slideCaption">A happy moment ✨</p>
+        <div class="slide-controls">
+          <button class="round-btn" id="prevSlide" aria-label="Previous photo">❮</button>
+          <span id="slideCount">1 / 4</span>
+          <button class="round-btn" id="nextSlide" aria-label="Next photo">❯</button>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Certificate -->
+    <!-- <section class="section">
+      <h2 class="section-title">One last surprise 🏆</h2>
+      <p class="subtitle">You've reached the final level. Claim your achievement!</p>
+      <div class="card">
+        <div class="big-emoji">🏆</div>
+        <button class="btn primary" id="certificateBtn">Claim my certificate!</button>
+        <div id="certificate" class="certificate hidden">
+          <div class="big-emoji">🎉🏆🎉</div>
+          <p>THIS CERTIFICATE IS AWARDED TO</p>
+          <h3 id="certificateName">Birthday Girl</h3>
+          <p>For successfully surviving another year, spreading smiles and being awesome!</p>
+          <h3>Achievement unlocked! ⭐</h3>
+          <p>Status: Officially Awesome 😎</p>
+        </div>
+      </div>
+    </section> -->
+
+    <footer>
+      <div class="big-emoji">🎈🎂🎈</div>
+      <p>Happy Birthday! Keep smiling! 😊</p>
+      <!-- <small>Made with creativity and a little bit of madness.</small> -->
+    </footer>
+  </div>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
