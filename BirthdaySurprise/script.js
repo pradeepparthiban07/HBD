@@ -6,7 +6,7 @@ const birthdayGirl = "Keerthana...";
 
 celebration();
 
-playMusic();
+//playMusic();
 
 
 document.getElementById("startBtn").addEventListener("click", () => {
@@ -326,3 +326,5 @@ setInterval(createBalloon, 1800);
     music.pause();
     music.currentTime = 0;
 }
+
+playMusic();
