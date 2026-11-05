@@ -2,7 +2,7 @@
 // PERSONALIZE THESE SETTINGS
 // ===============================================
 const birthdayGirl = "Keerthana...";
-
+playMusic();
 
 celebration();
 
