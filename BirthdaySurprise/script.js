@@ -320,7 +320,7 @@ setInterval(createBalloon, 1800);
  function playMusic() {
         document.getElementById("bgMusic").play();
     }
-
+playMusic()
    function stopMusic() {
     const music = document.getElementById("bgMusic");
     music.pause();
